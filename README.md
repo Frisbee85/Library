@@ -1,3 +1,3 @@
 # Library
-Projekt pisany z projektu JavaStart
+Projekt pisany z projektu JavaStart.
 cdn...
