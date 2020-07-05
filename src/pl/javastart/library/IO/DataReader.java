@@ -13,9 +13,7 @@ public class DataReader {
         this.printer = printer;
     }
 
-    public String getString() {
-        return sc.nextLine();
-    }
+
 
     public Book readAndCreateBook() {
         printer.printLine("Tytuł: ");
@@ -56,6 +54,10 @@ public class DataReader {
            sc.nextLine();
        }
     }
+    public String getString() {
+        return sc.nextLine();
+    }
+
     public void close(){
         sc.close();
     }

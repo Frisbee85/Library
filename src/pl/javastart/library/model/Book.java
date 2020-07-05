@@ -3,6 +3,7 @@ package pl.javastart.library.model;
 import java.util.Objects;
 
 public class Book extends Publication {
+    public static final String TYPE ="Książka";
     private String author;
     private int pages;
     private String isbn;
@@ -41,8 +42,19 @@ public class Book extends Publication {
     }
 
     @Override
+    public String toCsv() {
+        return (TYPE + ";") +
+                getTitle() + ";" +
+                getPublisher() + ";" +
+                getYear() + ";" +
+                author + ";" +
+                pages + ";" +
+                isbn + "";
+    }
+
+    @Override
     public String toString() {
-        return super.toString()+
+        return super.toString() +
                 ", autor: " + author +
                 ", stron: " + pages +
                 ", isbn: " + isbn;

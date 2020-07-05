@@ -4,7 +4,7 @@ import pl.javastart.library.model.Library;
 
 public class LibraryApp {
 
-    private static final String APP_NAME = "Biblioteka v 1.6";
+    private static final String APP_NAME = "Biblioteka v 1.9";
     public static void main(String[] args) {
         System.out.println(APP_NAME);
         LibraryControl libraryControl= new LibraryControl();
